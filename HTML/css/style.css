@@ -1,0 +1,10 @@
+.footer {
+		    background-color: black;
+		    color: white;
+		}
+		main.main-content {
+    background-color: black;
+    height: 500px;
+    width: 700px;
+    border: 2px solid;
+}
