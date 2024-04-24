@@ -1,0 +1,38 @@
+body {
+    font-family: cursive;
+}
+/*header navigation*/
+header nav {
+	background-color: #000;
+	display: flex;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+    gap: 7%;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 15px;
+}
+header nav ul li a:hover {
+	background: #2d80ad;
+}
+li.active a {
+    background: #2d80ad;
+}
+div.auth-button a{
+	padding: 5px 10px;
+	background-color: #248024;
+	color: #fff;
+	border: 1px solid #0a650a;
+}
+.auth-button {
+	border-left: 1px solid #fff;
+}
+.auth-button ul {
+    margin-right: 40px;
+}
