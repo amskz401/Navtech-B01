@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Farhan Portfolio | Home</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<style type="text/css">
+		@keyframes myFirstFrame{
+			from {
+				transform: scale(1.0);
+			}
+			to {
+				transform: scale(1.5);
+			}
+		}
+
+		@keyframes rotateLoader {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		button.two-dim {
+			text-align: center;
+		    width: 200px;
+		    height: 100px;
+		    background: blue;
+		    color: white;
+		    font-size: 27px;
+		    cursor: pointer;
+		    animation-name: myFirstFrame;
+		    animation-duration: 2s;
+		    animation-iteration-count: infinite;
+		}
+
+		.loader{
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+/*			background-image: conic-gradient(red, green, blue, black);*/
+			border-top: 2px solid red;
+			border-right: 2px solid green;
+			animation-name: rotateLoader;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class="active"><a href="home.html">Home</a></li>
+				<li><a href="table.html">Table</a></li>
+				<li><a href="profile.html">Profile</a></li>
+			</ul>
+			<div class="auth-button">
+				<ul>
+					<li>
+						<a href="signup.html">Singup</a>
+					</li>
+					<li>
+						<a href="login.html">Login</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<!-- <button class="abs">
+			Absolute Position
+		</button>
+		<button class="rel">
+			Relative Position
+		</button>
+		<button class="fix">
+			Fixed Position
+		</button> -->
+
+		<!-- <div class="boxes">
+			<div class="box">box 1</div>
+			<div class="box d-none">box 2</div>
+			<div class="box v-hide">box 3</div>
+			<div class="box">box 3</div>
+		</div> -->
+		<!-- <div class="next-boxes">
+			
+		</div> -->
+		 <!-- <p><br></p>
+		<div class="conic-boxes">
+			<div class="conic-box"></div>
+			<div class="conic-box"></div>
+			<div class="conic-box"></div>
+			<div class="conic-box"></div>
+		</div> -->
+<!--
+		<p><br></p>
+
+		<p style="text-align: center;">
+			<button class="two-dim">2D Example</button>
+		</p>
+
+		<p style="text-align: center;">
+			<div class="loader"></div>
+		</p> -->
+
+
+		<div class="resp">
+			<div class="box">box 1</div>
+			<div class="box">box 2</div>
+			<div class="box">box 3</div>
+			<div class="box">box 4</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<p>
+			Copyright @copy PNY Multan
+		</p>
+	</footer>
+</body>
+</html>
