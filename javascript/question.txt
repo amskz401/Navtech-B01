@@ -1,0 +1,23 @@
+loops, 
+objects/arrays, 
+functions => 
+    hoisting, 
+    normal vs arrow, 
+    callback, 
+    higher order function,
+    recursion
+
+
+sum()
+mul(78 * 98 * 78 * 54); // recursion / callback
+[23,54,76,89,12] // sort [12, 23, 54, 76, 89]
+
+// 2nd highest number, 2nd lowest number
+
+// fabnocci series 0, 1 > 1 > 2 > 3 > 5
+
+// prime numbers 2, 3, 5, 7, 11, 13, 17, 19
+
+[12,34,5,678,8,9,6,54,3,4,5,76,87,9,85,4,1,2,3,45,6,7,8]// filter a specific number
+
+// lottery system (455788) // user demand loop (do while) ==> recuring function

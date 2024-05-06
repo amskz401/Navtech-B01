@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<script type="text/javascript" src="assets/js/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="categories.html">Categories</a>
+						</li>
+						<!-- <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Dropdown
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li> -->
+					</ul>
+					<ul class="d-flex">
+						<li>
+							<a class="btn btn-outline-info" href="login.html">Login</a>
+							<a class="btn btn-outline-success" href="signup.html">Signup</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<section class="vh-100">
+				  <div class="container-fluid h-custom">
+				    <div class="row d-flex justify-content-center align-items-center h-100">
+				      <div class="col-md-9 col-lg-6 col-xl-5">
+				        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+				          class="img-fluid" alt="Sample image">
+				      </div>
+				      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+				        <form action="" method="post" id="loginForm" class="loginForm">
+				          <!-- Email input -->
+				          <div data-mdb-input-init class="form-outline mb-4">
+				          	<label class="form-label" for="email">Email address</label>
+				            <input type="email" required name="email" id="email" class="form-control form-control-lg"
+				              placeholder="Enter a valid email address" />
+				          </div>
+
+				          <!-- Password input -->
+				          <div data-mdb-input-init class="form-outline mb-3">
+				          	<label class="form-label" for="password">Password</label>
+
+				          	<div class="input-group">
+								  <input type="password" required name="password" id="password" class="form-control form-control-lg"
+				              placeholder="Enter password" />
+								  <span class="input-group-text" id="show_hide"><i class="bi bi-eye"></i></span>
+							</div>
+				            
+				            
+				          </div>
+				          <p class="text-danger" style="display: none;" id="error-message"></p>
+				          <div class="d-flex justify-content-between align-items-center">
+				            <!-- Checkbox -->
+				            <div class="form-check mb-0">
+				              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+				              <label class="form-check-label" for="form2Example3">
+				                Remember me
+				              </label>
+				            </div>
+				            <a href="#!" class="text-body">Forgot password?</a>
+				          </div>
+
+				          <div class="text-center text-lg-start mt-4 pt-2">
+				            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+				              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+				            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+				                class="link-danger">Register</a></p>
+				          </div>
+
+				        </form>
+				      </div>
+				    </div>
+				  </div>
+				</section>
+			</div>
+		</div>
+
+		<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        	<div class="form-group">
+        		<label>Name</label>
+        		<input type="text" name="" class="form-control">
+        	</div><div class="form-group">
+        		<label>Email</label>
+        		<input type="text" name="" class="form-control">
+        	</div><div class="form-group">
+        		<label>Password</label>
+        		<input type="text" name="" class="form-control">
+        	</div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+
+	<div class="container">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+			<div class="col-md-4 d-flex align-items-center">
+				<a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+					<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+				</a>
+				<span class="mb-3 mb-md-0 text-body-secondary">© 2024 PNY, Multan</span>
+			</div>
+
+			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+				<li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+				<li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+				<li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+			</ul>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		// function pass_value(input) {
+		// 	if(input.value == "") {
+		// 		alert("Enter Values first");
+		// 	}
+		// }
+		// var loginForm = document.getElementById("loginForm");
+		// var emailInput = document.getElementById("email");
+		// var passInput = document.getElementById("password");
+		// var errorMsg = document.getElementById("error-message");
+
+		// loginForm.addEventListener("submit", function(event) {
+		// 	if(emailInput.value == "") {
+		// 		// alert("Invalid input values");
+
+		// 		emailInput.style.border = "1px solid red";
+		// 		passInput.style.border = "1px solid red";
+		// 		errorMsg.style.display = "block";
+		// 		errorMsg.innerText = "Email is required";
+		// 		event.preventDefault();
+		// 	} else {
+		// 		// alert("Invalid input values");
+		// 		emailInput.style.border = "unset";
+		// 		passInput.style.border = "1px solid red";
+		// 		errorMsg.style.display = "none";
+		// 	}
+
+		// 	if(emailInput.value == "" || passInput.value == "") {
+		// 		// alert("Invalid input values");
+		// 		emailInput.style.border = "1px solid red";
+		// 		passInput.style.border = "1px solid red";
+		// 		errorMsg.style.display = "block";
+		// 		event.preventDefault();
+		// 	}
+
+		// })
+
+		$(document).ready(function() {
+			$("#loginForm").validate();
+			$("#show_hide").click(function(event) {
+				if($("#password").attr("type") == "password"){
+					$("#password").attr("type", "text");
+				} else {
+					$("#password").attr("type", "password");
+				}
+			});
+
+			$("#show_hide").css({
+				backgroundColor: 'red',
+				cursor: 'pointer',
+				color: "white"
+			});
+
+			$("#show_hide").hover(function() {
+				$("#show_hide").css({
+					backgroundColor: 'gray',
+					cursor: 'pointer',
+					color: "black"
+				});
+			}, function() {
+				$("#show_hide").css({
+					backgroundColor: 'red',
+					cursor: 'pointer',
+					color: "white"
+				});
+			});
+
+			// $("#loginForm").submit(function(event) {
+			// 	var email = $("#email").val();
+			// 	var password = $("#password").val();
+			// 	if(email == "") {
+			// 		$("#error-message").show().text("Email is required");
+			// 		$("#email").addClass('border-danger');
+			// 		event.preventDefault();
+			// 		return false;
+			// 	} else {
+			// 		$("#error-message").hide().text("");
+			// 		$("#email").removeClass('border-danger').addClass('border-success');
+			// 	}
+
+			// 	if(password == "") {
+			// 		$("#error-message").show().text("Password is required");
+			// 		$("#password").addClass('border-danger');
+			// 		event.preventDefault();
+			// 	} else {
+			// 		$("#error-message").hide().text("");
+			// 		$("#password").removeClass('border-danger').addClass('border-success');
+			// 	}
+			// });
+		});
+	</script>
+</body>
+</html>
