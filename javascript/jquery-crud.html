@@ -42,7 +42,7 @@
                 <th>Action</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="append_data">
               <tr>
                 <td>1</td>
                 <td>Farhan</td>
@@ -130,13 +130,51 @@
     </div>
   </body>
   <script>
+    function get_students() {
+      if (localStorage.getItem("students") !== null) {
+        students = localStorage.getItem("students");
+        students = JSON.parse(students);
+        let html = "";
+        students.forEach((std, index) => {
+          html += `<tr>
+                <td>${index}</td>
+                <td>${std.name}</td>
+                <td>${std.email}</td>
+                <td>${std.phone}</td>
+                <td>
+                  <a href="" class="btn btn-primary"
+                    ><i class="bi bi-pencil"></i
+                  ></a>
+                  <a href="" class="btn btn-danger"
+                    ><i class="bi bi-trash"></i
+                  ></a>
+                </td>
+              </tr>`;
+        });
+        $("#append_data").html(html);
+      }
+    }
+    $(document).ready(function () {
+      get_students();
+    });
+
     function get_values() {
+      let students = [];
+      if (localStorage.getItem("students") !== null) {
+        students = localStorage.getItem("students");
+        students = JSON.parse(students);
+      }
+
       let data = {
         name: $("#name").val(),
         email: $("#email").val(),
         phone: $("#phone").val(),
       };
-      localStorage.setItem("users", JSON.stringify(data));
+      students = [...students, data];
+
+      localStorage.setItem("students", JSON.stringify(students));
+      jQuery("#exampleModal").modal("hide");
+      get_students();
     }
   </script>
 </html>
