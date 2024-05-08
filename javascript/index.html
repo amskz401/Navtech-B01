@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="clock.js"></script> -->
+    <!-- <script src="b.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function show_hide_text() {
+        $("#show-table").show("slow");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <button onclick="getData()">Fetch Data</button>
+    <input type="text" id="table" />
+    <button onclick="even_odd()">Check Number</button>
+    <button onclick="print_table()">Print Table</button>
+    <button onclick="set_bg('green')">Green</button>
+    <button onclick="set_bg('purple')">Purple</button>
+    <button onclick="set_bg('red')">Red</button>
+    <button onclick="set_bg('aqua')">Aqua</button>
+    <button onclick="show_hide_text()">show hide text</button>
+    <div id="show-table" style="display: none">
+      this is my text initally hidden
+    </div>
+  </body>
+</html>
