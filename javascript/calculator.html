@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+</head>
+<body>
+	
+	<div class="container">
+		<input type="" id="result" name="">
+		<button onclick="btn_val(1)">1</button>
+		<button onclick="btn_val(2)">2</button>
+		<button onclick="btn_val(3)">3</button>
+		<button onclick="btn_val(4)">4</button>
+		<button onclick="btn_val(5)">5</button>
+		<button onclick="btn_val('+')">+</button>
+		<button onclick="btn_val('-')">-</button>
+		<button onclick="btn_val('*')">*</button>
+		<button onclick="btn_val('=')">=</button>
+	</div>
+	<script type="text/javascript">
+		function btn_val(value) {
+			let input = document.querySelector("#result");
+			if(value == '=') {
+				console.log(eval(input.value));
+				input.value = eval(input.value);
+
+			} else {
+				existing_val = input.value;
+				input.value = (existing_val + value);
+			}
+			
+		}
+	</script>
+</body>
+</html>
